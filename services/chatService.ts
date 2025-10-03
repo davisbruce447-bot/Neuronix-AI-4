@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabaseClient';
-import { AiResponse, ChatSessionSummary, ChatTurn, UserMessage } from '../types';
+import { AiResponse, ChatSessionSummary, ChatTurn, UserMessage } from './types';
 
 export const fetchChatHistory = async (userId: string): Promise<ChatSessionSummary[]> => {
     const { data, error } = await supabase
