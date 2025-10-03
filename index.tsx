@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import App from './App';
 import { AuthProvider } from './contexts/AuthContext';
+import { CreditProvider } from './contexts/CreditContext';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -14,7 +15,9 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <AuthProvider>
-        <App />
+        <CreditProvider>
+          <App />
+        </CreditProvider>
       </AuthProvider>
     </HashRouter>
   </React.StrictMode>
