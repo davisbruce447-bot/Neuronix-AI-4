@@ -1,5 +1,5 @@
 
-import { AiResponse, Model } from '../types';
+import { AiResponse, Model } from './types';
 import { MODELS } from '../constants';
 
 // --- IMPORTANT ---
